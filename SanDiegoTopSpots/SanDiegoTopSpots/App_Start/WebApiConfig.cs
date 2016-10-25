@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Formatting;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace SanDiegoTopSpots
 {
@@ -11,6 +12,8 @@ namespace SanDiegoTopSpots
     {
         public static void Register(HttpConfiguration config)
         {
+            var policy = new EnableCorsAttribute("*", "*", "*");
+            config.EnableCors(policy);
             // Web API configuration and services
 
             // Web API routes

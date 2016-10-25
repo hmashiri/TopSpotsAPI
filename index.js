@@ -1,21 +1,24 @@
+(function() {
+    'use strict';
+    angular
+        .module('app', [])
+        .controller('MainController', MainController);
 
-
-var myApp = angular.module('myApp', []);
-
-myApp.controller('MainController', function($scope, $http)
-{
-	$scope.topspots= [];
-	$scope.name = "Name";
-    $scope.description = "Description";
-    $scope.link = "Links"
-
-	$http.get( 'topspots.json' ).then( function( response ) 
-	{ 
-	    $scope.topspots = response.data;
-
-	    //testing
-	    console.log($scope.topspots);
-	    console.log($scope.topspots[0].location[1])
-	});
-
-});    
+         MainController.$inject = ['$http'];
+    /* @ngInject */
+    function MainController($http) {
+        var vm = this;
+        vm.title = 'MainController';
+        activate();
+        ////////////////
+        function activate() {
+            $http({
+                method:'GET',
+                url: 'http://localhost:49874/api/TopSpots'
+            })
+            .then(function(response){
+                vm.topspots = response.data;
+            })
+        }
+    }
+})();

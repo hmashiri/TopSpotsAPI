@@ -39,3 +39,6 @@ C:\Users\hadji\ORIGIN\TopSpotsAPI\SanDiegoTopSpots\SanDiegoTopSpots\bin\System.W
 C:\Users\hadji\ORIGIN\TopSpotsAPI\SanDiegoTopSpots\SanDiegoTopSpots\obj\Debug\SanDiegoTopSpots.csprojResolveAssemblyReference.cache
 C:\Users\hadji\ORIGIN\TopSpotsAPI\SanDiegoTopSpots\SanDiegoTopSpots\obj\Debug\SanDiegoTopSpots.dll
 C:\Users\hadji\ORIGIN\TopSpotsAPI\SanDiegoTopSpots\SanDiegoTopSpots\obj\Debug\SanDiegoTopSpots.pdb
+C:\Users\hadji\ORIGIN\TopSpotsAPI\SanDiegoTopSpots\SanDiegoTopSpots\bin\System.Web.Cors.dll
+C:\Users\hadji\ORIGIN\TopSpotsAPI\SanDiegoTopSpots\SanDiegoTopSpots\bin\System.Web.Http.Cors.dll
+C:\Users\hadji\ORIGIN\TopSpotsAPI\SanDiegoTopSpots\SanDiegoTopSpots\bin\System.Web.Http.Cors.xml
